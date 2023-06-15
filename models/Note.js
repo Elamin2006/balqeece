@@ -16,10 +16,10 @@ const noteSchema = new mongoose.Schema(
       type: String,
       required: true
     },
-    completed: [{
+    completed: {
       type: Boolean,
       default: false
-    }]
+    }
   },
   {
     timestamps: true
@@ -31,4 +31,5 @@ noteSchema.plugin(AutoIncrement, {
   id: 'ticketNums',
   start_seq: 500
 })
+
 module.exports = mongoose.model('Note', noteSchema)
