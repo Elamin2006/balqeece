@@ -11,8 +11,6 @@ const connectDB = require('./config/dbConn')
 const mongoose = require('mongoose')
 const PORT = process.env.PORT || 5000
 
-console.log(process.env.NODE_ENV)
-
 connectDB()
 
 app.use(logger)
