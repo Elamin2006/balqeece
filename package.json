@@ -4,8 +4,8 @@
   "description": "tech notes MERN Projet",
   "main": "server.js",
   "scripts": {
-    "start": "node server",
-    "dev": "nodemon server"
+    "start": "node init && node server",
+    "dev": "node init && nodemon server"
   },
   "author": "",
   "license": "ISC",
@@ -19,7 +19,7 @@
     "express-async-handler": "^1.2.0",
     "express-rate-limit": "^6.7.0",
     "jsonwebtoken": "^9.0.0",
-    "mongoose": "^7.2.4",
+    "mongoose": "^6.5.0",
     "mongoose-sequence": "^5.3.1",
     "uuid": "^9.0.0"
   },

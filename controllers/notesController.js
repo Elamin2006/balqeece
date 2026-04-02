@@ -19,6 +19,7 @@ const getAllNotes = asyncHandler(async (req, res) => {
 
 const createNewNote = asyncHandler(async (req, res) => {
   const { user, title, text } = req.body
+
   if (!user || !title || !text) {
     return res.status(400).json({ message: 'All fields are required' })
   }
